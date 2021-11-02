@@ -1,0 +1,47 @@
+.stack {
+    padding: 106px 0 126px;
+
+    @include a (tablet-xl) {
+        padding: 75px 0 80px;
+    }
+
+    @include a (mobile) {
+        padding: 50px 0 50px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__content {
+        max-width: 515px;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: toRem(57);
+        line-height: 58px;
+        font-weight: 700;
+        margin-bottom: 33px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(20);
+        line-height: 31px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+}

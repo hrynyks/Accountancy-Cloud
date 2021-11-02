@@ -1,0 +1,63 @@
+.hub {
+    padding: 108px 0 78px;
+
+    @include a (tablet-xl) {
+        padding: 70px 0 50px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        max-width: 547px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-size: toRem(58);
+        font-weight: 700;
+        margin-bottom: 40px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        font-size: toRem(20);
+        line-height: 31px;
+        margin-bottom: 79px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__btn {
+        font-size: toRem(18);
+        font-weight: 700;
+        width: 140px;
+        line-height: 50px;
+        color: #000;
+        background-color: #F7B2B7;
+        border-radius: 100px;
+        text-align: center;
+
+        @include a (tablet-xl) {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

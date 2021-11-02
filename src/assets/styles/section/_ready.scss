@@ -1,0 +1,54 @@
+.ready {
+    padding: 108px 0;
+
+    @include a (tablet-xl) {
+        padding: 75px 0;
+    }
+
+    &-wrap {
+        padding: 89px 90px;
+        background-color: #8BD4D6;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        @include a (mobile) {
+            padding: 50px 90px;
+        }
+    }
+
+    &__title {
+        font-size: toRem(46);
+        font-weight: 700;
+        margin-bottom: 18px;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__subtitle {
+        font-size: toRem(18);
+
+        @include a (tablet-xl) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        font-size: toRem(18);
+        width: 159px;
+        line-height: 50px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 100px;
+        text-align: center;
+    }
+}
